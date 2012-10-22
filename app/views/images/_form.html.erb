@@ -1,0 +1,14 @@
+<%= simple_form_for(@image,:html => {:multipart => true}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  	<%= f.input :title %>
+  	<%= f.input :content %>
+    <%= f.input :remote_image_url %>
+    <%= image_tag(@image.image) if @image.image? %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

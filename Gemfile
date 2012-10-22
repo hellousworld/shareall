@@ -5,6 +5,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+gem 'rest-client'
+gem 'carrierwave'
+gem 'carrierwave-upyun'
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0", :group => :production
 gem "pg", ">= 0.14.1"
